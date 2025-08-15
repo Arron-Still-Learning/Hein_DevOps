@@ -654,7 +654,7 @@ header nav ul li:last-child {
   background-size: 200% 200%;
   color: #64FFDA;
   font-family: 'Inter', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -845,9 +845,27 @@ footer p:last-child {
   background-color: #0A192F;
 }
 
+.heading {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 40px;
+  color: #64FFDA;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.heading::after {
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin-top: 8px;
+  background-color: #64FFDA;
+  content: '';
+}
+
 .skills-grid {
   display: grid;
-  margin-top: 40px;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 30px;
 }
